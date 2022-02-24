@@ -1,0 +1,32 @@
+@import '../../_variables.scss';
+
+.searchForm{
+  display: flex;
+  margin: 16px auto 32px;
+  max-width: 400px;
+
+  .searchInput, .searchBtn{
+    border-radius: 4px;
+    color: $primaryColor;
+    font-size: 15px;
+    padding: 12px;
+    border: 1px solid $gray;
+    user-select: none;
+  }
+
+  .searchInput {
+    flex-grow: 1;
+  }
+
+  .searchBtn{
+    background: $primaryColorLight;
+    border: none;
+    user-select: none;
+    margin: 0 0 0 8px;
+    min-width: 80px;
+
+    :disabled {
+      background: $disabledColor;
+    }
+  }
+}

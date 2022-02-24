@@ -1,0 +1,65 @@
+@import "../../_variables.scss";
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+
+  .totalCount {
+    text-align: left;
+  }
+
+  .listItem {
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $gray;
+    padding: 4px 16px;
+
+    .listRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .repoNameWrapper {
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .starCount {
+      justify-content: end;
+      align-content: end;
+    }
+
+    .description {
+      font-size: 14px;
+      text-align: left;
+      margin: 4px auto;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 2.4em;
+      line-height: 1.2em;
+      word-wrap: break-word;
+    }
+
+    .cardFooter{
+      display: flex;
+      font-size: 12px;
+      margin: 8px auto;
+    }
+
+    .language {
+      background: $white;
+      color: $primaryColor;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .lastUpdated {
+      font-weight: normal;
+      text-align: right;
+      flex-grow: 1;
+    }
+  }
+}

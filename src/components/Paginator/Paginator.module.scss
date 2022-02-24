@@ -1,0 +1,29 @@
+@import "../../_variables.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+button {
+  border-radius: 4px;
+  color: $primaryColor;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px 4px;
+  user-select: none;
+  background: $primaryColorLight;
+  margin: 0 8px;
+  width: 32px;
+
+  &:disabled {
+    background: $white;
+    cursor: not-allowed;
+  }
+
+  &.highlight {
+    background: $primaryColor;
+    color: $primaryColorLight;
+  }
+}
