@@ -1,3 +1,5 @@
+![Github Search](https://user-images.githubusercontent.com/19354167/155629439-704da4ff-7c1b-4341-a075-c88c2fda2004.gif)
+
 # Overview
 This project allows the user to search github by username and list associated repositories sorted by popularity descending through the use of the [GitHub REST API](https://docs.github.com/en/rest). I set out to build a simple UI with clear feedback to notify the user when data is loading or when an error has occured, such as hitting the low rate limit. The default per page value of 30 was used and pagination is implemented to allow for navigation of larger user repository libraries.
 
